@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Form from "../Form/Form";
 import "./checkout.css";
 import Product from "../../assets/images/product.svg";
@@ -8,7 +8,7 @@ import Product3 from "../../assets/images/product-3.svg";
 import Delete from "../../assets/images/delete-icon.svg";
 import { RxCross2 } from "react-icons/rx";
 
-const Checkout: React.FC  = () => {
+const Checkout: React.FC = () => {
   const [isMessageVisible, setMessageVisible] = useState<boolean>(false);
 
   const toggleMessageVisibility = () => {
@@ -18,7 +18,7 @@ const Checkout: React.FC  = () => {
   return (
     <div className="checkout-main-container">
       <div className="checkout-container">
-        <div className='checkout-content'>
+        <div className="checkout-content">
           <div className="product-container">
             {/* Product Detail */}
             <div className="product-details">
@@ -87,21 +87,29 @@ const Checkout: React.FC  = () => {
               </div>
 
               <div className="leave-message">
-                  <button onClick={toggleMessageVisibility}>Leave a message</button>
-                  {isMessageVisible && (
-                    <div className="leave-msg">
-                      <h3>Leave a message</h3>
-                      <textarea placeholder="Enter your message"></textarea>
-                      <div style={{display:'flex', alignItems:'center', gap:'10px'}}>
-                        <label className="switch">
-                          <input type="checkbox" />
-                          <span className="slider"></span>
-                        </label>
-                        <h3>Make message anonymous</h3>
-                      </div>
+                <button onClick={toggleMessageVisibility}>
+                  Leave a message
+                </button>
+                {isMessageVisible && (
+                  <div className="leave-msg">
+                    <h3>Leave a message</h3>
+                    <textarea placeholder="Enter your message"></textarea>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                      }}
+                    >
+                      <label className="switch">
+                        <input type="checkbox" />
+                        <span className="slider"></span>
+                      </label>
+                      <h3>Make message anonymous</h3>
                     </div>
-                  )}
-                </div>
+                  </div>
+                )}
+              </div>
             </div>
 
             {/* Total Price */}
@@ -114,7 +122,7 @@ const Checkout: React.FC  = () => {
           {/* Give as a gift */}
           <div className="give-gift">
             <label className="switch">
-              <input type="checkbox"/>
+              <input type="checkbox" />
               <span className="slider"></span>
             </label>
             <h3>Give as a gift</h3>
@@ -124,7 +132,7 @@ const Checkout: React.FC  = () => {
           <div className="bought-item">
             <h3>Customers who bought this item also bought</h3>
             <div className="products-image">
-              <img src={Product1} alt="Product"/>
+              <img src={Product1} alt="Product" />
               <img src={Product2} alt="Product" />
               <img src={Product3} alt="Product" />
             </div>
@@ -133,7 +141,6 @@ const Checkout: React.FC  = () => {
 
         {/* Form */}
         <Form />
-
       </div>
     </div>
   );
