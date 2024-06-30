@@ -1,0 +1,332 @@
+.form-container {
+  width: 100%;
+  max-width: 415px;
+  border: 1px solid black;
+  padding: 5px 0;
+  border-radius: 4px;
+  /* margin: 10px; */
+
+}
+
+/* Email Address */
+.email-address {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 0px 15px 15px 15px;
+}
+
+.email-address label {
+  color: #000000;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 700;
+  font-family: "Mabry Pro", sans-serif;
+}
+
+.email-address input {
+  width: 100%;
+  max-width: 381px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 0 16px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #000000;
+}
+
+.email-address input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #000000;
+}
+
+/* Pay container */
+.pay-container {
+  padding: 7px 15px 15px 15px;
+  border-bottom: 1px solid black;
+}
+
+.pay-container h3 {
+  color: #000000;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.pay-method-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pay-method {
+  width: 120px;
+  height: 80px;
+  border-radius: 4px;
+  padding-top: 11px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pay-method:nth-child(1) {
+  box-shadow: 4px 4px 0px 0px #000000;
+  background-color: #e5e5e5;
+}
+
+.pay-method h3 {
+  color: black;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.card-details {
+  padding: 9px 0;
+}
+
+.card-details .card-name {
+  max-width: 381px;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 0 16px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #000000;
+}
+
+.card-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-detail h3 {
+  color: #000000;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.save-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Card Information */
+.card-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-information label {
+  color: #000000;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.card-information input {
+  width: 100%;
+  max-width: 381px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 0 16px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #000000;
+}
+
+/* Contact Information */
+.contact-information-container{
+    border-bottom: 1px solid black;
+    padding: 0 15px 15px 15px;
+}
+
+.contact-information-container h3{
+    font-size: 16px;
+    line-height: 48px;
+    color: black;
+    font-weight: 700;
+}
+
+.contact-information{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.country-dropdown{
+    width: 183px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 0 16px;
+    position: relative;
+}
+
+.dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dropdown h3{
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+}
+
+.option-dropdown{
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 30px;
+    padding: 10px 15px;
+    border-bottom: 1px solid black;
+}
+
+.dropdown-options{
+    position: absolute;
+    z-index: 100px;
+    box-shadow: 4px 4px 10px rgb(78, 79, 80);
+    background: white;
+    top: 50px;
+    left: 0;
+    width: 183px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 4px;
+    overflow-y: scroll;
+}
+
+.dropdown-options::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Zip Code */
+
+.zip-code{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.zip-code label{
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #000;
+    
+}
+
+.zip-code input{
+    width: 183px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid black;
+    outline: none;
+    padding: 0 16px;
+}
+
+/* Pay Button */
+
+.pay-btn{
+  padding: 18px 15px 15px 15px;
+  width: 100%;
+}
+.pay-button{
+    width: 100%;
+    max-width: 381px;
+    height: 50px;
+    border-radius: 4px;
+    background: #000;
+    color: white;
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 400;
+    font-family: "Mabry Pro", sans-serif;
+    cursor: pointer;
+}
+
+
+
+/* Custom Checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  /* width: 10000px; */
+  border-radius: 8px;
+ }
+ 
+ .container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 9px;
+  user-select: none;
+  border-radius: 8px;
+ }
+ 
+ .checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border: 1px solid black;
+  border-radius: 8px;
+ }
+ 
+ .container input:checked ~ .checkmark {
+  transition: all 0.2s;
+  background-color: #FF90E8;
+  border: 1px solid black;
+ }
+ 
+ .container input ~ .checkmark {
+  transition: all 0.2s;
+  opacity: 1;
+  box-shadow: 1px 1px 0px rgb(183, 183, 183);
+ }
+ 
+ .checkmark:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  transition: all 0.2s;
+ }
+ 
+ .container input:checked ~ .checkmark:after {
+  opacity: 1;
+  transition: all 0.2s;
+ }
+ 
+ .container .checkmark:after {
+  left: 7px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border:  solid black;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+ }
