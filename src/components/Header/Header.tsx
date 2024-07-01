@@ -6,8 +6,8 @@ const Header: React.FC = () => {
     <div className="header-main-container">
       <div className="header-container">
         <div className="header">
-            <h3>Checkout</h3>
-            <button>Continue shopping</button>
+          <h3>Checkout</h3>
+          <button>Continue shopping</button>
         </div>
       </div>
     </div>

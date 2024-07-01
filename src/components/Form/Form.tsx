@@ -11,10 +11,10 @@ interface Country {
 }
 
 const Form: React.FC = () => {
-  const [selectedCountry, setSelectedCountry] = useState('United States');
-  const [isOpen, setIsOpen] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState<string>('United States');
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const countries = [
+  const countries: Country[] = [
     { code: 'US', name: 'United States' },
     { code: 'CN', name: 'China' },
     { code: 'IN', name: 'India' },

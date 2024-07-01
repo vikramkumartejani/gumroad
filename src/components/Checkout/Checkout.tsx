@@ -11,7 +11,7 @@ import { RxCross2 } from "react-icons/rx";
 const Checkout: React.FC = () => {
   const [isMessageVisible, setMessageVisible] = useState<boolean>(false);
 
-  const toggleMessageVisibility = () => {
+  const toggleMessageVisibility = (): void => {
     setMessageVisible(!isMessageVisible);
   };
 
