@@ -77,13 +77,11 @@ const Checkout: React.FC = () => {
                     <div className="unselect">3</div>
                     <input type="number" className="item" placeholder="5" />
                   </div>
-                  <input
-                    type="number"
-                    placeholder="3"
-                    className="input-number"
-                  />
+                  <div className="count-price">
+                    <input type="number" placeholder="3" className="input-number"/>
+                    <h3>US$3</h3>
+                  </div>
                 </div>
-                <h3>US$3</h3>
               </div>
 
               <div className="leave-message">
